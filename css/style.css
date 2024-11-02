@@ -136,7 +136,8 @@ body a:focus {
     -o-background-size: cover;
     -ms-background-size: cover; */
     /* background-size: cover; */
-    min-height: 150px;
+    min-height: 50px;
+    height: 100px;
 }
 .w3-banner-bot_icon i {
     font-size: 5em;
@@ -946,7 +947,7 @@ ul.banner-menu-w3layouts li a:hover {
 }
 .w3-banner_bottom_txt {
     width: 100%;
-    margin: 10em auto 0;
+    /* margin: 10em auto 0; */
 }
 #small-dialog, #small-dialog2, #small-dialog1, #small-dialog3, #small-dialog4 {
     max-width: 85%;
