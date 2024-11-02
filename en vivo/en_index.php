@@ -508,6 +508,17 @@ Author: Camila M. Chavez
 				<!-- <div class="w3layouts_gallery_grids">	 -->
 				<div class="row g-0 bg-light position-relative" style="align-items: center!important;">
 				<div class="col-md-4 mb-md-0 p-md-4">
+					<img src="\images\Audex- inicio.jpg" class="img-fluid img-thumbnail" alt="...">
+				</div>
+				<div class="col-md-8 p-4 ps-md-0">
+					<h5 class="mt-0">Audex</h5>
+					<p>Development of online store with Odoo, integration with Mercado Pago, shopping cart and connection with inventory. Entrepreneurship dedicated to electroacoustics.
+					</p>
+					<a href="https://audex.com.ar" class="stretched-link">See Site</a>
+				</div>
+			</div>	
+				<div class="row g-0 bg-light position-relative" style="align-items: center!important;">
+				<div class="col-md-4 mb-md-0 p-md-4">
 					<img src="images/portfolio/thay-ar.png" class="img-fluid img-thumbnail" alt="...">
 				</div>
 				<div class="col-md-8 p-4 ps-md-0">

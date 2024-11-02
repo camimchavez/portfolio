@@ -541,11 +541,23 @@ Author: Camila M. Chavez
 				<!-- <div class="w3layouts_gallery_grids">	 -->
 				<div class="row g-0 bg-light position-relative" style="align-items: center!important;">
 				<div class="col-md-4 mb-md-0 p-md-4">
+					<img src="\images\Audex- inicio.jpg" class="img-fluid img-thumbnail" alt="...">
+				</div>
+				<div class="col-md-8 p-4 ps-md-0">
+					<h5 class="mt-0">Audex</h5>
+					<p>Desarrollo de tienda online con Odoo integración con mercado pago, carrito de compras y conexión con el inventario. Emprendimiento dedicado a electroacustica.
+					</p>
+					<a href="https://audex.com.ar" class="stretched-link">Ver Sitio</a>
+				</div>
+			</div>	
+
+			<div class="row g-0 bg-light position-relative" style="align-items: center!important;">
+				<div class="col-md-4 mb-md-0 p-md-4">
 					<img src="images/portfolio/thay-ar.png" class="img-fluid img-thumbnail" alt="...">
 				</div>
 				<div class="col-md-8 p-4 ps-md-0">
 					<h5 class="mt-0">Thay-ar</h5>
-					<p>Rediseño de la web de ThaylinShoes en plataforma TiendaNube integración con multiplataformas de pago por ejemplo: mercado Pago .
+					<p>Rediseño de la web de ThaylinShoes en plataforma TiendaNube integración con mercado Pago y Oca. 
 						Emprendimiento dedicado a la venta de indumentaria femenina.
 					</p>
 					<a href="https://thay.ar" class="stretched-link">Ver Sitio</a>
