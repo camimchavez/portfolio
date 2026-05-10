@@ -28,7 +28,7 @@ Author: Camila M. Chavez
 <!-- //web-fonts -->
 </head>
 <body>
-<div id="particles-global"></div>
+<div id="particles-global">
 		<div class="w3-banner">
 				<!-- <?php
 				if(isset($_GET["respuesta"]) && $_GET["respuesta"] == "ok"){
@@ -774,8 +774,6 @@ function bg4(d){
 <script>
 window.addEventListener("load", () => {
 
-  if (typeof tsParticles === "undefined") return;
-
   tsParticles.load("particles-global", {
 
     fullScreen: {
@@ -786,23 +784,48 @@ window.addEventListener("load", () => {
       color: "transparent"
     },
 
+    fpsLimit: 60,
+
     particles: {
 
       number: {
-        value: 80
+        value: 140,
+        density: {
+          enable: true,
+          area: 1200
+        }
       },
 
       color: {
-        value: ["#c084fc", "#f0abfc", "#a855f7"]
+        value: [
+          "#ffffff",
+          "#f0abfc",
+          "#c084fc",
+          "#e9d5ff"
+        ]
       },
 
-      links: {
-        enable: false
+      shape: {
+        type: "star"
+      },
+
+      opacity: {
+        value: { min: 0.1, max: 0.8 },
+        animation: {
+          enable: true,
+          speed: 0.8,
+          minimumValue: 0.1,
+          sync: false
+        }
+      },
+
+      size: {
+        value: { min: 0.5, max: 2 },
       },
 
       move: {
         enable: true,
-        speed: 0.6,
+        speed: 0.15,
         direction: "none",
         random: true,
         straight: false,
@@ -811,22 +834,30 @@ window.addEventListener("load", () => {
         }
       },
 
-      opacity: {
-        value: 0.4
+      twinkle: {
+        particles: {
+          enable: true,
+          frequency: 0.03,
+          opacity: 1
+        }
       },
 
-      size: {
-        value: { min: 1, max: 4 }
-      },
-
-      blur: {
-        enable: true,
-        value: 2
+      links: {
+        enable: false
       }
 
     },
 
+    interactivity: {
+      events: {
+        onHover: {
+          enable: false
+        }
+      }
+    },
+
     detectRetina: true
+
   });
 
 });
@@ -839,7 +870,7 @@ window.addEventListener("load", () => {
     <script src="js/bootstrap.min.js"></script>
 	    <script src="js/bootstrap.bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-
+</div>
 </body>
 </html>
 
