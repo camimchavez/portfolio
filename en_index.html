@@ -28,7 +28,7 @@ Author: Camila M. Chavez
 <!-- //web-fonts -->
 </head>
 <body>
-
+<div id="particles-global"></div>
 		<div class="w3-banner">
 				<!-- <?php
 				if(isset($_GET["respuesta"]) && $_GET["respuesta"] == "ok"){
@@ -108,7 +108,7 @@ Author: Camila M. Chavez
 							<div class="w3ls-agile-left-info" style="text-align:center;">
 									<div class="wel-left animated wow fadeInLeft" data-wow-delay=".5s">
 										
-										<p> PHP | LARAVEL | MySQL | JS | HTML | CSS | React | jQuery | Wordpress | Odoo | Diseño UX | Bootstrap | SCRUM | GIT & GITHUB.</p>
+										<p> PHP | LARAVEL | MySQL | JS | HTML | CSS | React | jQuery | Wordpress | Odoo | Shopify | Diseño UX | Bootstrap | SCRUM | GIT & GITHUB.</p>
 										<p>SEO Analysis and Implementation</p>
 										<p>Integration of Api's</p>
 										<p>Database design and structuring</p> 
@@ -680,7 +680,7 @@ Author: Camila M. Chavez
 									<i class="fa fa-volume-control-phone" aria-hidden="true"></i><span   style="margin-top: 22px;"><a href="tel:1134287247">Contact for Phone</a></span>
 								</div>
 								<div class="col-md-4">
-									<i class="fa fa-envelope-o" aria-hidden="true"></i><span style="margin-top: 22px;"><a href="mailto:camilamchavez@hotmail.com">Contact for Mail</a></span>
+									<i class="fa fa-envelope-o" aria-hidden="true"></i><span style="margin-top: 22px;"><a href="mailto:camilamchavez24@gmail.com">Contact for Mail</a></span>
 								</div>
 								<div class="col-md-4">
 									<i class="fa fa-comments-o" aria-hidden="true"></i><span><a href="https://www.linkedin.com/in/camila-chavez-8b4901107/">Contact for Linkedin</a></span>
@@ -770,12 +770,75 @@ function bg4(d){
 </script>	
 <!--//popup-js-->
 
+<!--Fondo de partiiculas -->
+<script>
+window.addEventListener("load", () => {
+
+  if (typeof tsParticles === "undefined") return;
+
+  tsParticles.load("particles-global", {
+
+    fullScreen: {
+      enable: false
+    },
+
+    background: {
+      color: "transparent"
+    },
+
+    particles: {
+
+      number: {
+        value: 80
+      },
+
+      color: {
+        value: ["#c084fc", "#f0abfc", "#a855f7"]
+      },
+
+      links: {
+        enable: false
+      },
+
+      move: {
+        enable: true,
+        speed: 0.6,
+        direction: "none",
+        random: true,
+        straight: false,
+        outModes: {
+          default: "out"
+        }
+      },
+
+      opacity: {
+        value: 0.4
+      },
+
+      size: {
+        value: { min: 1, max: 4 }
+      },
+
+      blur: {
+        enable: true,
+        value: 2
+      }
+
+    },
+
+    detectRetina: true
+  });
+
+});
+</script>
+<!-- fin fondo de particulas-->
 
 	
 	<!-- Bootstrap core JavaScript ---->
 
     <script src="js/bootstrap.min.js"></script>
 	    <script src="js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
 
 </body>
 </html>
