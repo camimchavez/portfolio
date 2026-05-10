@@ -10,6 +10,7 @@ body{
 	background: #050406;
 	height: 100%;
 	width: 100%;
+     overflow-x:hidden;
 }
 body a{
 	transition: 0.5s all;
@@ -38,6 +39,11 @@ body a:focus {
     outline: none;
 	text-decoration:none;
 }
+section{
+    position: relative;
+    z-index: 2;
+}
+
 /*-- banner --*/
 .w3-banner-left{
     background: url(../images/b12.webp)no-repeat 0px 0px;
@@ -1362,6 +1368,9 @@ p.footer-w3l-te {
 }
 }
 
+
+
+
 /*-- /responsive design --*/
 /*-- timeline design --*/
 .main-timeline{position:relative}
@@ -1423,3 +1432,16 @@ p.footer-w3l-te {
 .main-timeline .timeline-content:before,.main-timeline .timeline:nth-child(2n) .timeline-content:before{left:99px}
 .main-timeline .timeline-content:after,.main-timeline .timeline:nth-child(2n) .timeline-content:after{left:65px}
 }
+
+
+/* Particulas fondo general */
+#particles-global{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #050406;
+}
+/* FIN particulas fondo general */
