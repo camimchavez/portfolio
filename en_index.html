@@ -774,46 +774,90 @@ function bg4(d){
 <script>
 window.addEventListener("load", () => {
 
-  if (typeof tsParticles === "undefined") return;
-
   tsParticles.load("particles-global", {
-    fullScreen: { enable: false },
+
+    fullScreen: {
+      enable: false
+    },
+
+    background: {
+      color: "transparent"
+    },
+
+    fpsLimit: 60,
 
     particles: {
-      number: { value: 140 },
 
-      color: { value: ["#711FF8", "#e2b3d7", "#ffffff"] },
+      number: {
+        value: 140,
+        density: {
+          enable: true,
+          area: 1200
+        }
+      },
 
-      size: {
-        value: 1.2,
-        random: true
+      color: {
+        value: [
+          "#ffffff",
+          "#f0abfc",
+          "#c084fc",
+          "#e9d5ff"
+        ]
+      },
+
+      shape: {
+        type: "star"
       },
 
       opacity: {
-        value: 0.7,
-        random: true
+        value: { min: 0.1, max: 0.8 },
+        animation: {
+          enable: true,
+          speed: 0.8,
+          minimumValue: 0.1,
+          sync: false
+        }
+      },
+
+      size: {
+        value: { min: 0.5, max: 2 },
       },
 
       move: {
         enable: true,
-        speed: 0.5,          // 🔥 antes 155 → ahora fluido
+        speed: 0.15,
         direction: "none",
         random: true,
         straight: false,
-        outModes: "out"
+        outModes: {
+          default: "out"
+        }
       },
 
-      links: { enable: false }
+      twinkle: {
+        particles: {
+          enable: true,
+          frequency: 0.03,
+          opacity: 1
+        }
+      },
+
+      links: {
+        enable: false
+      }
+
     },
 
     interactivity: {
       events: {
-        onhover: { enable: false },
-        onclick: { enable: false }
+        onHover: {
+          enable: false
+        }
       }
     },
 
-    detectRetina: false
+    detectRetina: true
+
   });
 
 });
