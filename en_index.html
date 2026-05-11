@@ -28,7 +28,7 @@ Author: Camila M. Chavez
 <!-- //web-fonts -->
 </head>
 <body>
-<div id="particles-global">
+
 		<div class="w3-banner">
 				<!-- <?php
 				if(isset($_GET["respuesta"]) && $_GET["respuesta"] == "ok"){
@@ -770,107 +770,13 @@ function bg4(d){
 </script>	
 <!--//popup-js-->
 
-<!--Fondo de partiiculas -->
-<script>
-window.addEventListener("load", () => {
-
-  tsParticles.load("particles-global", {
-
-    fullScreen: {
-      enable: false
-    },
-
-    background: {
-      color: "transparent"
-    },
-
-    fpsLimit: 60,
-
-    particles: {
-
-      number: {
-        value: 140,
-        density: {
-          enable: true,
-          area: 1200
-        }
-      },
-
-      color: {
-        value: [
-          "#ffffff",
-          "#f0abfc",
-          "#c084fc",
-          "#e9d5ff"
-        ]
-      },
-
-      shape: {
-        type: "star"
-      },
-
-      opacity: {
-        value: { min: 0.1, max: 0.8 },
-        animation: {
-          enable: true,
-          speed: 0.8,
-          minimumValue: 0.1,
-          sync: false
-        }
-      },
-
-      size: {
-        value: { min: 0.5, max: 2 },
-      },
-
-      move: {
-        enable: true,
-        speed: 0.15,
-        direction: "none",
-        random: true,
-        straight: false,
-        outModes: {
-          default: "out"
-        }
-      },
-
-      twinkle: {
-        particles: {
-          enable: true,
-          frequency: 0.03,
-          opacity: 1
-        }
-      },
-
-      links: {
-        enable: false
-      }
-
-    },
-
-    interactivity: {
-      events: {
-        onHover: {
-          enable: false
-        }
-      }
-    },
-
-    detectRetina: true
-
-  });
-
-});
-</script>
-<!-- fin fondo de particulas-->
 
 	
 	<!-- Bootstrap core JavaScript ---->
 
     <script src="js/bootstrap.min.js"></script>
 	    <script src="js/bootstrap.bundle.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-</div>
+
 </body>
 </html>
 
